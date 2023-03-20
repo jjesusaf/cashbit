@@ -1,0 +1,62 @@
+.main2 {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.main {
+    width: 640px;
+    height: 80vh;
+    left: 0px;
+    top: 0px;
+    background: #FCFCFC;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-top: 31px;
+}
+
+.options {
+    display: flex;
+    background: #F9F9F9;
+    border-bottom: 1px solid #DAD4DF;
+    border-radius: 8px 8px 0px 0px;
+    height: 120px;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.optionIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.textP {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+    color: #000000;
+}
+
+
+@media (max-width: 800px) {
+    .main {
+        width: 80%;
+        height: 80vh;
+        margin-left: 0;
+
+    }
+
+    .main2 {
+        justify-content: center;
+
+    }
+}

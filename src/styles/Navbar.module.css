@@ -1,0 +1,97 @@
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    width: 75%;
+}
+
+.nav2 {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #07050F;
+    align-items: center;
+}
+
+
+.textH1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: auto;
+}
+
+
+.textP {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+    color: #FFFFFF;
+}
+
+.btnNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    width: 184px;
+    height: 54px;
+    background: #722F37;
+    border-radius: 8px;
+}
+
+.menu {
+    display: none;
+}
+
+.adress {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+    /* Neutral/100 */
+    color: #FFFFFF;
+}
+
+.wallet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    width: 184px;
+    height: 56px;
+    border: 1.4px solid #722F37;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .nav {
+        display: none;
+
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+}

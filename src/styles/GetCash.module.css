@@ -1,0 +1,75 @@
+.textH1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    /* or 55px */
+    color: #000000;
+}
+.get{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 61px;
+    margin-right: 59px;
+}
+.cash{
+    gap: 45px;
+}
+.textInput {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    width: 518px;
+    height: 64px;
+    left: 62px;
+    top: 415px;
+    border: 1px solid #DAD4DF;
+    border-radius: 8px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    width: 184px;
+    height: 54px;
+    background: #722F37;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    /* identical to box height, or 22px */
+    color: #FFFFFF;
+    margin-top: 45px;
+}
+
+@media (max-width: 800px) {
+    .cash{
+        gap: 48px;
+    }
+
+    .textH1 {
+        font-size: 36px;
+    }
+
+    .textInput {
+        width: 250px;
+    }
+    .btn{
+        margin-top: 48px;
+    }
+
+    .get{
+        align-items: center;
+    }
+}
