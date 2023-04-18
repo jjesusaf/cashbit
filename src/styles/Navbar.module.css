@@ -28,7 +28,7 @@
     line-height: 120%;
     /* or 38px */
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #333333;
     width: auto;
 }
 
@@ -40,19 +40,18 @@
     font-size: 18px;
     line-height: 120%;
     /* identical to box height, or 22px */
-    color: #FFFFFF;
+    color: #07050F;
 }
 
 .btnNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 16px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
     width: 184px;
     height: 54px;
-    background: #722F37;
+    background: #2F725A;
     border-radius: 8px;
 }
 

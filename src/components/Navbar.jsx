@@ -11,74 +11,61 @@ const Navbar = ({ data, handleConnect }) => {
 
 
     return (
-        <div className={`bg-[#07050F] h-[120px]`}>
+        <div className={`bg-[#FFFAF2] h-[100px]`}>
             <nav className={`flex justify-around w-full items-center h-full`}>
                 <h1 className={`${styles.textH1}`}>
-                    CASH
-                    <span className={`${styles.textH1}`} style={{ color: '#722F37' }}>
+                    DOLA
+                    <span className={`${styles.textH1}`} style={{ color: '#2F725A' }}>
                         BIT.
                     </span>
                 </h1>
-                {toogle ? 
-                <ul className={`${styles.nav}`}>
-                    <li>
-                        <p className={`${styles.textP}`}>
-                            Decentralized Scrow
-                        </p>
-                    </li>
-                    <li>
-                        <p className={`${styles.textP}`}>
-                            Walletless
-                        </p>
-                    </li>
-                    <li>
-                        <p className={`${styles.textP}`}>
-                            ZKCash
-                        </p>
-                    </li>
-                    <li>
-                        {
-                            data != null ?
-                                <div className={`${styles.wallet}`}>
-                                    <Image src={wallet} alt='wallet' />
-                                    <div className='flex'>
-                                        <p className={`${styles.adress}`}>
-                                            {data.address.slice(0, 4)}...
-                                        </p>
-                                        <p className={`${styles.adress}`}>
-                                            {data.address.slice(38, 42)}
-                                        </p>
-                                    </div>
-                                </div>
-                                :
-                                <button className={`${styles.btnNav}`} onClick={handleConnect}>
-                                    Connect Wallet
+                {toogle ?
+                    <ul className={`${styles.nav}`}>
+                        <li>
+                            <p className={`${styles.textP}`}>
+                                Services
+                            </p>
+                        </li>
+                        <li>
+                            <p className={`${styles.textP}`}>
+                                About us
+                            </p>
+                        </li>
+                        <li>
+                            <p className={`${styles.textP}`}>
+                                Learn more
+                            </p>
+                        </li>
+                        <Link href='/login'>
+                            <li>
+                                <button className={`${styles.btnNav}`}   >
+                                    Join waitlist
                                 </button>
-                        }
-                    </li>
-                </ul> : 
-                <ul className={`${styles.nav2}`}>
-                    <li>
-                        <p className={`${styles.textP}`}>
-                            Decentralized Scrow
-                        </p>
-                    </li>
-                    <li>
-                        <p className={`${styles.textP}`}>
-                            Walletless
-                        </p>
-                    </li>
-                    <li>
-                        <p className={`${styles.textP}`}>
-                            ZKCash
-                        </p>
-                    </li>
-                    <li>
-                        <button className={`${styles.btnNav}`}>
-                            Connect Wallet
-                        </button>
-                    </li>
-                </ul>}
+                            </li>
+                        </Link>
+                    </ul> :
+                    <ul className={`${styles.nav2}`}>
+                        <li>
+                            <p className={`${styles.textP}`}>
+                                Decentralized Scrow
+                            </p>
+                        </li>
+                        <li>
+                            <p className={`${styles.textP}`}>
+                                Walletless
+                            </p>
+                        </li>
+                        <li>
+                            <p className={`${styles.textP}`}>
+                                ZKCash
+                            </p>
+                        </li>
+                        <li>
+                            <button className={`${styles.btnNav}`}>
+                                Connect Wallet
+                            </button>
+                        </li>
+                    </ul>}
                 <Image src={menu} alt="menu" className={`${styles.menu}`} onClick={() => setToggle(!toogle)} />
             </nav>
         </div>

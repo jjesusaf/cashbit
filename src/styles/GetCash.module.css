@@ -3,20 +3,23 @@
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
-    line-height: 120%;
+    line-height: 66px;
     /* or 55px */
     color: #000000;
+    width: 480px;
+    height: 198px;
 }
-.get{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-left: 61px;
-    margin-right: 59px;
+
+.get {
+    width: 640px;
+    height: 560px;
+    background: #FFFAF2;
 }
-.cash{
+
+.cash {
     gap: 45px;
 }
+
 .textInput {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -26,35 +29,136 @@
     /* or 19px */
     width: 518px;
     height: 64px;
-    left: 62px;
-    top: 415px;
     border: 1px solid #DAD4DF;
     border-radius: 8px;
 }
 
 .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 16px;
-    width: 184px;
+    width: 170px;
     height: 54px;
-    background: #722F37;
+    /* Button/Primary */
+    background: #2F725A;
     border-radius: 8px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 120%;
-    /* identical to box height, or 22px */
+    line-height: 27px;
+    /* identical to box height, or 150% */
     color: #FFFFFF;
-    margin-top: 45px;
+}
+
+.network {
+    width: 320px;
+    height: 90px;
+    border: 1.4px solid #CFD7D4;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.network2 {
+    width: 320px;
+    height: 90px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #333333;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.buy1num {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #93989A;
+}
+
+.buy1button {
+    font-family: 'Inter', sans-serif;
+    width: 320px;
+    height: 54px;
+    background: #2F725A;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.sign {
+    width: 420px;
+    height: 116px;
+    border: 1.4px solid #CFD7D4;
+    border-radius: 8px;
+}
+
+.sign>h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #07050F;
+}
+
+.signemail {
+    width: 420px;
+    height: 270px;
+    border: 1.4px solid #CFD7D4;
+    border-radius: 8px;
+}
+
+.signemail>h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #07050F;
+}
+
+.form {
+    width: 320px;
+    height: 46px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.formbutton {
+    width: 320px;
+    height: 54px;
+    background: #2F725A;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.b2tittle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+
 }
 
 @media (max-width: 800px) {
-    .cash{
+    .cash {
         gap: 48px;
     }
 
@@ -65,11 +169,12 @@
     .textInput {
         width: 250px;
     }
-    .btn{
+
+    .btn {
         margin-top: 48px;
     }
 
-    .get{
+    .get {
         align-items: center;
     }
 }

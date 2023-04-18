@@ -3,8 +3,60 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+
+@layer base {
+  .text1{
+    @apply font-normal text-xs leading-[21px]
+  }
+  .text2{
+    @apply font-normal text-sm leading-[21px]
+  }
+  .text3{
+    @apply font-semibold text-md leading-[27px]
+  }
+  .text4{
+    @apply font-bold text-xl leading-[36px]
+  }
+  .text5{
+    @apply font-bold text-xxl leading-[38.4px]
+  }
+  .text6{
+    @apply font-bold text-xxxl leading-[66px]
+  }
+  
+}
+@layer components {
+  .sign{
+    @apply w-[420px] h-[116px] border-solid border-[1px] border-borderGray rounded-[8px] flexColCenter gap-[14px] text2 }
+  .input1{
+    @apply w-[360px] h-[52px] bg-white2 rounded-[8px] pl-10
+  }
+  .btnSign{
+   @apply w-[360px] h-[54px] rounded-[8px] text-md bg-green1 text-white2
+  }  
+  .circlesm{
+    @apply w-[32px] h-[32px] border-green1 border-solid border-[1px] flex items-center justify-center rounded-[100%] 
+  }
+  .checkbox{
+    @apply w-[44px] h-[44px] rounded-[8px] border-none
+  }
+  .note{
+    @apply w-[420px] bg-rgbagreen h-[123px] rounded-[8px]
+  }
+}
+
+@layer utilities {
+  .flexColCenter{
+    @apply flex flex-col items-center justify-center
+  }
+  .flexRowCenter{
+    @apply flex flex-row justify-center items-center
+  }
+}
+
 body {
-  background-color: #07050F;
+  background-color: #FFFAF2;
+  font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 800px) {

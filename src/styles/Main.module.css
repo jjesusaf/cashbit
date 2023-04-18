@@ -7,25 +7,14 @@
 
 .main {
     width: 640px;
-    height: 80vh;
-    left: 0px;
-    top: 0px;
-    background: #FCFCFC;
-    border-radius: 8px;
-    margin-left: 100px;
-    margin-top: 31px;
+    height: 120px;
+    background: #FFFAF2;
+    /* Button/Stroke */
+    border-bottom: 1px solid #CFD7D4;
+    border-radius: 8px 8px 0px 0px;
 }
 
-.options {
-    display: flex;
-    background: #F9F9F9;
-    border-bottom: 1px solid #DAD4DF;
-    border-radius: 8px 8px 0px 0px;
-    height: 120px;
-    align-items: center;
-    justify-content: space-around;
-    align-content: center;
-}
+
 
 .optionIcon {
     display: flex;
@@ -33,7 +22,8 @@
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
-
+    border-bottom: 1px solid #FFFAF2;
+    height: 100%;
 }
 
 .textP {
